@@ -1,0 +1,10 @@
+{
+  "name": "secure-web-project",
+  "version": "1.0.0",
+  "description": "PKI / OpenSSL / SSL-TLS demonstration project",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js"
+  },
+  "license": "MIT"
+}

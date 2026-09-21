@@ -1,0 +1,17 @@
+node_modules/
+
+.idea/
+.vscode/
+
+.env
+
+pki/**/*.key
+pki/**/*.pem
+pki/**/*.pfx
+
+# Test/untrusted certificates
+pki/client/fake-client.crt
+pki/client/fake-client.csr
+pki/client/test-ca.crt
+pki/client/test-ca.srl
+pki/untrusted/

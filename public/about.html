@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Assessment System</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <a class="navbar-brand" href="/">Assessment System</a>
+
+    <div class="navbar-links">
+        <a href="/">Home</a>
+    </div>
+</nav>
+
+<main class="page-body">
+
+    <header class="site-header">
+        <h1>About Assessment System</h1>
+        <p class="subtitle">
+            A simple demonstration of secure web communication and client authentication.
+        </p>
+    </header>
+
+    <section class="card-grid">
+
+        <section class="card">
+            <h2>PKI & Certificates</h2>
+            <p>
+                The system uses a local Root CA to issue and verify server and client certificates.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>mTLS</h2>
+            <p>
+                Mutual TLS allows both the server and the client to authenticate each other using certificates.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>HTTPS</h2>
+            <p>
+                All communication with Assessment System is protected using HTTPS and TLS encryption.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>OpenSSL</h2>
+            <p>
+                OpenSSL is used to generate private keys, CSRs and certificates for the system.
+            </p>
+        </section>
+
+        <section class="card" id="client-security-demo">
+            <h2>Client-Side Security</h2>
+
+            <p>
+                This demo shows why <code>textContent</code> is safer than
+                <code>innerHTML</code> when displaying user input.
+            </p>
+
+            <input
+                    type="text"
+                    id="demo-input"
+                    placeholder="Try: <img src=x onerror=alert(1)>"
+            >
+
+            <button id="demo-button">Display safely</button>
+
+            <p>
+                <strong>Output:</strong>
+                <span id="demo-output"></span>
+            </p>
+
+            <small>
+                HTML/JavaScript entered here is displayed as plain text and is not executed.
+                This helps prevent XSS (Cross-Site Scripting).
+                Server-side validation is still required.
+            </small>
+        </section>
+
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <p id="status-line">Checking connection security...</p>
+</footer>
+
+<script src="/about.js"></script>
+
+</body>
+</html>
